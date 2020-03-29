@@ -1,0 +1,212 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family:serif;
+    background: url(img/bg.jpg) no-repeat top center ;
+    -webkit-background-size: cover;
+    background-size: cover;
+    min-height: 650px;
+    padding-top: 5%;
+    padding-left: 15%;
+    color: #FFF;
+    font-size: 19px;
+
+    
+}
+
+
+
+.header {
+    color: #5a5151;
+    text-align: center;
+    top: 0px;
+    width: 100%;
+    padding: 5px;
+    position: fixed;
+    top: 0px;
+  
+    
+ 
+}
+
+  h1.fivestar{
+    position: fixed;
+    top: 10px;
+    left: 90px;
+    color: black;
+    font-size: 30px;
+    
+  }
+  
+  ul.menu{
+    list-style: none; 
+    
+    
+    
+  }
+  li.home{
+    position: fixed;
+    top: 40px;
+    left: 870px;
+    color: #CCC;
+    
+  }
+  
+ 
+  
+    li.services{
+    position: fixed;
+    top: 40px;
+    left: 950px;
+    color: white;
+    
+  }
+  
+      li.room{
+    position: fixed;
+    top: 40px;
+    left: 1060px;
+    color: white;
+    
+  }
+  
+  
+      li.contact{
+    position: fixed;
+    top: 40px;
+    left: 1150px;
+    color: white;
+    
+  }
+  
+  A
+  {
+    text-decoration:none;
+    color: rgba(255, 255, 255, 0.4);
+   }
+   A:hover{
+    color: white;
+   }
+
+form{
+    width: 55%;
+   
+    padding: 30px;
+  
+    margin: 5px auto;
+
+}
+
+.textInput{
+   margin-top: 2px;
+   height: 28px;
+   border:1px solid #5E6E66;
+   font-size: 13px;
+   padding: 1px;
+   padding-left:4px; 
+   width: 100%;
+
+      
+}
+
+#error_msg{
+    width: 50%;
+    margin: 5px auto;
+    height: 30px;
+    border: 1px solid #FF0000;
+    background: #FFB9B8;
+    color:#FF0000;
+    text-align: center;
+    padding-top: 10px;}
+    
+    
+td {
+        text-align: right;
+        color:#42261c;
+        font-size:  26px;
+        font-weight:bold;
+    }
+    
+
+.btn {
+   background-color: #D9534F;
+   font-size: 17px;
+   font-family: serif;
+   padding: 4px 12px;
+   margin: 2px;
+   color:#f1eceb;
+   border: hidden;
+  
+   
+}
+.btn:hover{
+    background-color: #c51f1f;
+}
+  
+  
+  
+.LRbtn {
+   background-color: #D9534F;
+   font-size: 17px;
+   font-family: serif;
+   padding: 4px 12px;
+   margin: 2px;
+   color:#f1eceb;
+   border: hidden;
+   position: absolute;
+   top:80px;
+   left: 50px;
+   width: 80px;
+   height: 28px;
+   
+}
+.LRbtn:hover{
+    background-color: #c51f1f;
+}  
+
+.LRbtn1 {
+   background-color: #D9534F;
+   font-size: 17px;
+   font-family: serif;
+   padding: 4px 12px;
+   margin: 2px;
+   color:#f1eceb;
+   border: hidden;
+   position: absolute;
+   top:100px;
+   left: 50px;
+   width: 80px;
+   height: 28px;
+   
+}
+.LRbtn1:hover{
+    background-color: #c51f1f;
+}
+
+
+
+.rpheader{
+    position: absolute;
+    top:15px;
+    left: 600px;
+    font-family: serif;
+}
+
+.rform{
+  position: absolute;
+  top: 100px;
+  left:340px;
+  
+  
+}
+   
+
+
+
+
+
+
+
+
+
+
