@@ -25,8 +25,10 @@ if (isset($_POST['login_btn']))
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>   
        
   <body>
@@ -71,7 +73,30 @@ if (isset($_POST['login_btn']))
        </form>
         
         
+       <footer class="site-footer">
+       <h1 class="h1footer">FIVE STAR HOTEL</h1>
+       <a href="#" class="fa fa-facebook"></a>
+       <a href="#" class="fa fa-twitter"></a>
+       <a href="#" class="fa fa-instagram"></a>
+       
+        <span class="footerabout">ABOUT US</span>
+        <p class="footerabout2">Five Star Hotel : A hotel where you find comfort,
+        relaxation and <br> well-being of all kinds of service
+        Distinguished service characterized<br> by high quality
+        service makes life simpler services for the well-being
+        <br>We give pleasure at our hotel Reserve Room for your Family Vacation
+        and<br>Best Place To Enjoy Your Life</p>
         
+        <span class="contactfooter">CONTACT</span>
+        <p class="contactfooter2">
+            Far Far Away, Behind The Word Mountains,<br>
+            Far From The Countries Vokalia And Consonantia,<br>
+            There Live The Blind Texts.<br>
+            Address: 198 West 21th Street, Suite 721 New York NY 10016<br>
+            Number: +201114004280
+        </p>
+      
+       </footer> 
         
         
         

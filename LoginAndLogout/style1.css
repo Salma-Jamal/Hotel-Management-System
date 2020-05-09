@@ -91,16 +91,17 @@ body{
 
 form{
     width: 55%;
-   
     padding: 30px;
-  
     margin: 5px auto;
+    position: absolute;
+    top:180px;
+    left: 480px;
 
 }
 
 .textInput{
    margin-top: 2px;
-   height: 28px;
+   height: 34px;
    border:1px solid #5E6E66;
    font-size: 13px;
    padding: 1px;
@@ -137,6 +138,8 @@ td {
    margin: 2px;
    color:#f1eceb;
    border: hidden;
+   width: 85px;
+   height: 35px;
   
    
 }
@@ -273,6 +276,156 @@ td {
                  .sidenav a {font-size: 18px;}
                  } 
 
+ .midTitle span {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    position: relative;
+    top: 160px;
+    left: 345px;
+    font-size: 20px;
+    font-weight: 500; 
+    color:white;
+}
+
+.mid2{
+    font-size: 50px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 60px;
+    margin: 0 0 30px 0;
+    text-align: center;
+    position: relative;
+    top: 170px;
+    left: -60px;
+    
+}
+
+.btnbook{
+    padding: 14px 30px !important;
+    font-size: 22px !important;
+    bordeR: 1px solid transparent;
+    border-radius: 30px;
+    background: #FF5722;
+    color: #fff;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    font-family: "Open Sans", Arial, serif;
+    font-weight: 400;
+    line-height: 1.33333;
+    cursor: pointer;
+    position: relative;
+    top: 190px;
+    left: 400px;
+}
+
+.btnbook:hover{
+    background: #303030;
+}
+
+
+  .site-footer
+       {
+  background-color:#4c4c4cdb;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+  width: 1501px;
+  height: 100px;
+  position: absolute;
+  top:650px;
+  left: -2px;
+}
+
+.site-footer .footerabout{
+    position: absolute;
+    top: 12px;
+    left: 300px;
+    font-weight:400;
+    font-size:20px;
+    color: #bdbbb7;
+    font-family:"Lato", sans-serif	;
+}
+
+.site-footer .footerabout2{
+    position: absolute;
+    top: 20px;
+    left: 300px;
+    font-weight:normal;
+    font-size:17px;
+    color: #bfb9b9;
+}
+
+.site-footer .contactfooter{
+    position: absolute;
+    top: 12px;
+    left: 900px;
+    font-weight:400;
+    font-size:20px;
+    color: #bdbbb7;
+    font-family:"Lato", sans-serif	;
+}
+
+.site-footer .contactfooter2{
+    position: absolute;
+    top: 20px;
+    left: 900px;
+    font-weight:normal;
+    font-size:17px;
+    color: #bfb9b9;
+}
+
+
+.site-footer .h1footer{
+    font-family:"Lato", sans-serif	;
+    font-weight: 500;
+    margin-left: 10px;
+    position: absolute;
+    top:-3px;
+    font-size:25px;
+    color: #bdbbb7;;
+    letter-spacing: -1px;
+}
+
+.site-footer .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+
+.site-footer .fa:hover {
+    opacity: 0.7;
+}
+
+.site-footer .fa-facebook {
+  background:rgba(76, 175, 80, 0);
+  color: #3146d8;
+  position: absolute;
+  top:25px;
+}
+
+ .site-footer .fa-twitter {
+  background:rgba(76, 175, 80, 0);
+  color: #4de6e6;
+  position: absolute;
+  top:25px;
+  left: 40px;
+}
+
+ .site-footer .fa-instagram {
+  background:rgba(76, 175, 80, 0) ;
+  color: #ef6f92;
+  position: absolute;
+  top:25px;
+  left: 90px;
+ 
+}
 
 
 
