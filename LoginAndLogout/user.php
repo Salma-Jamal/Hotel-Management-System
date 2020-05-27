@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once('person.php');
+require_once('classes/userClass.php');
 if(!$_SESSION["username"])
 {
      header("Location:home.php");
@@ -13,27 +13,11 @@ if(!$_SESSION["username"])
     <head>
        <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
        <title>Five Star Hotel</title>
-       <link rel="stylesheet" type="text/css" href="style.css">
+       <link rel="stylesheet" type="text/css" href="css/style1.css">
        <meta name="viewport" content="width=device-width, initial-scale=1">
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
        <style>
-      .welcomeMessage
-        {
-            color: #6f1b1b;
-            font-weight:900;
-            font-size:30px;
-            text-transform:uppercase;
-            font-family: lato sans-serif;
-            letter-spacing: -2px;
-            position: relative;
-            top: 20px;
-            left: -100px;
-            background-color:#5d56568f;
-            width: 330px;
-            margin: 2px;
-            height: auto;
-            padding-left:7px;
-        }
+      
        </style>
     </head>   
        
@@ -72,6 +56,7 @@ if(!$_SESSION["username"])
          <a href="../com/com.php">COMPLAIN</a>
          <a href="../booking/booking.php">BOOK A ROOM</a>
          <a href="../ahmed/register.php">SERVICES</a>
+         <a href="RateRoom.php">RATE YOUR ROOM</a>
          <button class="logoutBtn" name="logoutBtn" onClick='location.href="?LOGOUT"'>LOGOUT</button>
       </div>
 
@@ -89,7 +74,7 @@ if(!$_SESSION["username"])
       </script> 
         
         
-     <div class="welcomeMessage"><h4>Welcome back <?php echo $_SESSION['username'];  ?> </h4></div>
+     <div class="welcomeMessageuser"><h4>Welcome back <?php echo $_SESSION['username'];  ?> </h4></div>
      
      <footer class="site-footer">
        <h1 class="h1footer">FIVE STAR HOTEL</h1>

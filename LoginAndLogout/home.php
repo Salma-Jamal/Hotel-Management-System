@@ -7,7 +7,7 @@ session_start();
 <html>
      <head>
        <title>Five Star Hotel</title>
-       <link rel="stylesheet" type="text/css" href="style.css">
+       <link rel="stylesheet" type="text/css" href="css/style1.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
        <style>
@@ -31,7 +31,7 @@ session_start();
            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
            <a href="#">ABOUT</a>
            <a href="login.php">LOGIN</a>
-           <a href="#">REGISTER</a>
+           <a href="Register.php">REGISTER</a>
        </div>
       
        <span class="openBut" style="font-size:30px;cursor:pointer" onclick="openNav();">&#9776; </span>

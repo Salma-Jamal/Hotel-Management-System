@@ -1,6 +1,6 @@
 <?php
 
-class pesron
+class person1
 {
     
     public $uName;
@@ -103,5 +103,11 @@ public function Login($usr,$pass) {
      
   
 }
+
+
+
+
+
+
 
 ?>
