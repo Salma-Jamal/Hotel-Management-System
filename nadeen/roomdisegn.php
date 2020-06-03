@@ -31,7 +31,7 @@ $room->AddRoom($room->floorNo,$room->roomNo,$room->roomTyp);
     <div class="form">
       <div class="Class_name">
         <label>Room Number  </label>
-        <input type="text" name="name" class="Class_Input" placeholder="Enter Room name" required pattern="^[a-zA-Z]*" title="you should enter valid class name">
+        <input type="text" name="name" class="Class_Input" placeholder="Enter Room number">
 
 	  </div>
       <br><br>

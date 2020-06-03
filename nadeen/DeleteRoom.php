@@ -26,13 +26,13 @@ $room->deletRoom($room->roomNo);
   <div class="contain">
     <div class="Add">
       <span>
-      For Adding Room
+      For Deleting Room
       </span>
-    <form class="foorm" action="DeletRoom.php" method="POST">
+    <form class="foorm" action="DeleteRoom.php" method="POST">
     <div class="form">
       <div class="Class_name">
         <label>Room Number  </label>
-        <input type="text" name="name" class="Class_Input"  value = "" placeholder="Enter Room name" required pattern="^[a-zA-Z]*" title="you should enter valid class name">
+        <input type="text" name="name" class="Class_Input"  value = "" placeholder="Enter Room number" title="you should enter valid class name">
 	  </div>
         
        <br>

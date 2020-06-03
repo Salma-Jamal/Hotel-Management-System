@@ -1,5 +1,6 @@
 <?php
 require_once 'DataBase.php';
+
 class bill extends DataBase{
 
 
@@ -42,29 +43,35 @@ $this->type_of_servies = $type_of_servies;
    
    public function cal_price($No_of_day,$type_of_room,$type_of_servies)
         {
-            
-            $Base=DataBase::getInstance();
-          
-            $Base->Insertbill($No_of_day,$type_of_room,$type_of_servies);
-            
+           $Base=DataBase::getInstance();
+           $Base->Insertbill($No_of_day,$type_of_room,$type_of_servies);
+           $cal = 0;
+                        
+        if($type_of_room=='single' && $type_of_servies == 'part')
+       {
+           $cal= $No_of_day*2000;
+           
+       }
        
-       if(gettype_of_room()=="single" && gettype_of_servies()=="part" )
-       {$cal=($No_of_day->getNo_of_day()*2000);}
+       elseif($type_of_room=='double' && $type_of_servies == 'part')
+       {
+         $cal=$No_of_day*3000;
+             
+       }
        
-       if(gettype_of_room()=="double" && gettype_of_servies()=="part" )
-       {$cal=($No_of_day->getNo_of_day()*3000);}
+      elseif($type_of_room=='single' && $type_of_servies == 'full')
+       {
+         $cal=$No_of_day*5000;
+             
+       }
        
-       if(gettype_of_room()=="single" && gettype_of_servies()=="full" )
-       {$cal=($No_of_day->getNo_of_day()*5000);}
-       
-       if(gettype_of_room()=="double" && gettype_of_servies()=="full" )
-       {$cal=($No_of_day->getNo_of_day()*10000);}
-       
-       
-       return $cal;
-              
+      elseif($type_of_room=='double' && $type_of_servies == 'full')
+       {
+         $cal=$No_of_day*10000;
+             
+       }
+          return $cal;
         }
-
 
 }
 ?>

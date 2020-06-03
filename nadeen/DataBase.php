@@ -30,9 +30,9 @@ class DataBase
     public function Delete($tableName,$id)
     {
 
-        $sql = "DELETE FROM ".$tableName." WHERE id=".$id;
+        $sql = "DELETE FROM `$tableName` WHERE roomNo='$id'";
 
-                if ($this->conn->query($sql) === TRUE)
+                if ($this->conn->query($sql) == TRUE)
                 {
                 return TRUE;
                 }
@@ -43,51 +43,61 @@ class DataBase
 
     }
     
-    public function Select()
+    
+         public function updateRoom($oldNo,$floor,$room,$type)
     {
-       $sql="select $id_room,$name_of_gust,$typ_sport from activity";
-        $result= $this->conn->query($sql);
-        
-        if($result-> num_rows >0){
-            echo "<table>";
-            while($row = $result->fetch_assoc()){
-            
-            echo "<tr><td>{$row["id-room"]}</td><td>{$row["name-of-gust"]}</td><td>{$row["typ-sport"]}</td></tr>" ;
-        }
-            echo "</table>";
-        }
-        else 
-        { echo "non";}
-        
-        $conn->close();
-        
-        
+         
+          $sql = "UPDATE `Room` SET floorNo='$floor', roomNo='$room', roomTyp='$type' WHERE roomNo='$oldNo'";
+          $result = $this->conn->query($sql);
+          header("location: updateroom.php"); 
+                      
     }
+    
     
     public function Insertroom($floor,$room,$type)
     {
          
           $sql = "INSERT INTO `Room` (`floorNo`, `roomNo`, `roomTyp`) VALUES ('$floor', '$room', '$type')";
           $result = $this->conn->query($sql);
-          header("location: roomdisegn.php");// redirect to home page
+          header("location: roomdisegn.php");
                       
     }
+    
+    
+    public function Select($name)
+    {
+       $sql= "select * from Activity where guestName='$name'";
+       
+        $result= $this->conn->query($sql);
+            echo "<table>";
+            echo"<tr><th>" . 'Room num' . "</th><th>" . 'GuestName'. "</th><th>". 'Activity' . "</th></tr>"; 
+            while($row = mysqli_fetch_array($result))
+            {   
+             echo "<tr><td>" . $row['roomNo'] . "</td><td>". $row['guestName'] . "</td><td>" . $row['activityType']. "</td></tr>";  
+            }
+            echo "</table>";
+          
+          
+        
+    }
+    
+
     
    public function Insertbill($No_of_day,$type_of_room,$type_of_services)
     {
          
-          $sql = "INSERT INTO `Bill` (`first-of-day`, `type-of-room`, `type-of-services`) VALUES ('$No_of_day', '$type_of_room', '$type_of_services')";
+          $sql = "INSERT INTO `Bill` (`firstOfDay`, `typeOfRoom`, `typeOfServices`) VALUES ('$No_of_day', '$type_of_room', '$type_of_services')";
           $result = $this->conn->query($sql);
-          header("location: billht.php");// redirect to home page
+         
                       
     }
     
     public function Insertac($id_room,$name_of_gust,$typ_sport)
     {
          
-          $sql = "INSERT INTO `Activity` (`first-of-day`, `type-of-room`, `type-of-services`) VALUES ('$id_room','$name_of_gust','$typ_sport')";
+          $sql = "INSERT INTO `Activity` (`roomNo`, `guestName`, `activityType`) VALUES ('$id_room','$name_of_gust','$typ_sport')";
           $result = $this->conn->query($sql);
-          header("location: billht.php");// redirect to home page
+    
                       
     }
     

@@ -48,27 +48,21 @@ public function AddRoom($floor,$room,$type)
         }
         
      
-        public function updateRoom($numberofroom,$floor,$room,$type){
+        public function updateRoom($oldnumber,$floor,$No,$type)
+        {
             $Base=DataBase::getInstance();
-            if($numberofroom==$this->room)
-            {
-                $Base->Insertroom($floor,$room,$type);
-                return true;
-                
-            }
-           return false; 
+            $Base->updateRoom($oldnumber,$floor,$No,$type);
+                   
         }
  
-        public function deletRoom($numbrtserach){
+        public function deletRoom($numbrtserach)
+        {
             
             $Base=DataBase::getInstance();
-            if($numbrtserach==roomNo)
-            {
-              $Base->Delete("Room",$this->roomNo);
-                return true;
-            }
-            
-            return false;
+          //  if($numbrtserach==roomNo)
+            //{
+              $Base->Delete("Room",$numbrtserach);
+            //}
             
         }
         

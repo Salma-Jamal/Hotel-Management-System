@@ -12,7 +12,7 @@ function __construct()
 {
     $this->id_room = "";
     $this->name_of_gust = "";
-    $this->$typ_sport = "";
+    $this->typ_sport = "";
 }
 
 function getid_room() {
@@ -46,25 +46,14 @@ public function choose_activity($id_room,$name_of_gust,$typ_sport){
             $Base->Insertac($id_room,$name_of_gust,$typ_sport);
             
     
-    for ($x = 1; $x <= 10000; $x++)
-{
-        if($typ_sport->gettyp_sport()=="swimming"){
-           $arraysw[x] = $id_room; 
-        }
-        if($typ_sport->gettyp_sport()=="tennis"){
-           $arraytn[x] = $id_room; 
-        }
-        if($typ_sport->gettyp_sport()=="massage"){
-           $arrayma[x] = $id_room; 
-        }
-    
-}
+   
+
 }
     
 public function show_names($name){
     
     $Base=DataBase::getInstance();
-    $Base->Select();
+    $Base->Select($name);
     
 }
 

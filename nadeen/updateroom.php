@@ -16,7 +16,7 @@ $room->setfloorNo($floorNo);
 $room->setroomNo($roomnum);
 $room->setroomTyp($roomtype);
 
-$room->AddRoom($oldroomnumber,$room->floorNo,$room->roomNo,$room->roomTyp);
+$room->updateRoom($oldroomnumber,$room->floorNo,$room->roomNo,$room->roomTyp);
 
 }
 
@@ -32,18 +32,18 @@ $room->AddRoom($oldroomnumber,$room->floorNo,$room->roomNo,$room->roomTyp);
       <span>
       For updating Room
       </span>
-    <form class="foorm" action="]" method="POST">
+    <form class="foorm" action="updateroom.php" method="POST">
     <div class="form">
       <div class="Class_name">
         <label>Old Room Number  </label>
-        <input type="text" name="old" class="Class_Input"  value = "" placeholder="Enter Room name" required pattern="^[a-zA-Z]*" title="you should enter valid class name">
+        <input type="text" name="old" class="Class_Input"  value = "" placeholder="Enter Room number"  title="you should enter valid class name">
 	   </div>
         
         <br>
         
       <div class="Class_name1">
         <label>New Room Number  </label>
-        <input type="text" name="name" class="Class_Input"  value = "" placeholder="Enter Room name" required pattern="^[a-zA-Z]*" title="you should enter valid class name">
+        <input type="text" name="name" class="Class_Input"  value = "" placeholder="Enter Room name" title="you should enter valid class name">
 	  </div>
         
       <br>
