@@ -54,7 +54,9 @@ if(!$_SESSION["username"]=='admin')
        
      <div id="mySidenav" class="sidenav">
        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-       <a href="#">ROOMS</a>
+       <a href="../nadeen/roomdisegn.php">ADD ROOM</a>
+       <a href="../nadeen/updateroom.php">UPDATE ROOM</a>
+       <a href="../nadeen/DeleteRoom.php">DELETE ROOM</a>
        <a href="ComplainsDisplay.php">SEE COMPLAINS</a>
        <a href="bookingDisplay.php">SEE BOOKINGS</a>
        <button class="logoutBtn" name="logoutBtn" onClick='location.href="?LOGOUT"'>LOGOUT</button>
