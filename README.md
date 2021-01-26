@@ -1,9 +1,9 @@
 ## Hotel-Management-System
 
-* Our project is a hotel managemet system application which has three end users 
-   Admin
-   Receptionist
-   Users
+* Our project is a hotel managemet system application which has three end users <br/> <br/> 
+   Admin<br/> 
+   Receptionist<br/> 
+   Users<br/> 
   <br/> 
 * Demos of the App <br/> <br/>
 ![Doctor Page](Demos/home.png)
