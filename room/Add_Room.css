@@ -1,0 +1,190 @@
+.contain   {
+    position: center;
+    height: 340px;
+    float: right;
+    margin-right: 550px;
+    border-radius: 20px;
+  }
+ .contain .validation {
+  width: 300px;
+  height: 260px;
+  margin-right:10px;
+  float:right;
+  border-radius: 30px;
+  position: center;
+ }
+
+ .contain .validation p{
+  font-family: -webkit-body;
+  font-weight: 200;
+  color: red;
+  padding-left: 40px;
+  font-size: 20px;
+ }
+  input:hover{
+    background-color:  rgba(174, 252, 237, 0.85)
+  }
+  select:hover{
+    background-color:  rgba(174, 252, 237, 0.85);
+  }
+span{
+  font-family: serif;
+  font-weight: 400;
+  color: bla;
+  padding-left: 50px;
+  line-height: 60px;
+  font-size: 30px;
+  padding-top: 40px;
+}
+
+.contain .form {
+  width: 480px;
+  height: 300px;
+  margin-left:10px;
+  float : left;
+  border-radius: 30px;
+  background: rgba(36, 32, 86, 1);
+  position: relative;
+  top:10px;
+
+}
+.contain .form  .Class_name{
+  width: 450px;
+  height: 40px;
+  margin-left:10px;
+  position: relative;
+  top:25px;
+}
+.contain .form  .Class_name label{
+  font-family: -webkit-body;
+  font-weight: 400;
+  color: #fffdfd;
+  padding-left: 20px;
+  font-size: 25px;
+}
+.contain .form  .Class_name1{
+  width: 450px;
+  height: 40px;
+  margin-left:10px;
+  position: relative;
+  top:5px;
+}
+.contain .form  .Class_name1 label{
+  font-family: -webkit-body;
+  font-weight: 400;
+  color: #fffdfd;
+  padding-left: 20px;
+  font-size: 25px;
+}
+.contain .form  .Floor{
+  width: 450px;
+  height: 40px;
+  margin-left:10px;
+  position: relative;
+  top:-10px;
+}
+.contain .form  .Floor label{
+  font-family: -webkit-body;
+  font-weight: 400;
+  color: #fffdfd;
+  padding-left: 20px;
+  font-size: 25px;
+}
+.contain .form  .Bulid_Name  {
+  width: 450px;
+  height: 40px;
+  margin-left:10px;
+  position: relative;
+  top:-18px;
+}
+.contain .form  .Bulid_Name label{
+  font-family: -webkit-body;
+  font-weight: 400;
+  color: #fffdfd;
+  padding-left: 20px;
+  font-size: 25px;
+}
+  .contain .form  .submit{
+  width: 450px;
+  height: 90px;
+  margin-left:10px;
+  position: relative;
+  bottom: 50px;
+
+}
+.contain .form  .submit .Cancel{
+  float:right;
+  position: relative;
+  top: 25px;
+  width: 200px;
+  height: 40px;
+  background: rgb(255, 60, 96);
+  border-bottom-style: solid;
+  border-radius: 30px;
+}
+.contain .form .submit .Cancel input{
+  font-size: 19px;
+  position: relative;
+  color: #f1eded;
+  background:rgba(22, 158, 153, 1);
+  height : 40px;
+  width:200px;
+  outline: none;
+  border-radius: 15px;
+  text-decoration: none;
+}
+.contain .form .submit .Cancel input:hover{
+  background-color: rgba(31, 28, 74, 1);
+}
+.contain .form .submit .Add {
+  background: rgb(255, 60, 96);
+  width: 220px;
+  border-bottom-style: solid;
+  border-radius: 15px;
+  position: relative;
+  top: 25px;
+  height: 40px;
+  float: left;
+}
+
+.contain .form .submit .Add input{
+  font-size: 25px;
+  position: relative;
+  color: #FAF4F4;
+  background: rgba(22, 158, 153, 1);
+  outline: none;
+  height: 40px;
+  width: 220px;
+  border-radius: 15px;
+}
+.contain .form .submit .Add input:hover{
+  background-color: rgba(31, 28, 74, 1);
+}
+.contain .form .submit .cancel2 {
+  background: rgb(255, 60, 96);
+  width: 220px;
+  border-bottom-style: solid;
+  border-radius: 15px;
+  position: relative;
+  top: 25px;
+  height: 40px;
+  float: left;
+}
+
+.contain .form .submit .cancel2 input{
+  font-size: 25px;
+  position: relative;
+  color: #FAF4F4;
+  background: rgba(22, 158, 153, 1);
+  outline: none;
+  height: 40px;
+  width: 220px;
+  border-radius: 15px;
+}
+.contain .form .submit .cancel2 input:hover{
+  background-color: rgba(31, 28, 74, 1);
+}
+
+
+
+
