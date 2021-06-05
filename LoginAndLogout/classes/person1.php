@@ -74,8 +74,10 @@ public function Login($usr,$pass) {
              #header("location: admin.php");
              #$_SESSION['message'] = "You are now logged in";
              #$_SESSION['username']= $usr;
-             $adm = new admin();
-             $adm->redirectLogin($usr);
+               $adm =admin::getInstance();
+               $adm->redirectLogin($usr);
+             #$adm = new admin();
+             ##$adm->redirectLogin($usr);
           }
                       
         elseif($usr == 'recep')
@@ -83,8 +85,10 @@ public function Login($usr,$pass) {
               //header("location: receptionist.php");
               //$_SESSION['message'] = "You are now logged in";
               //$_SESSION['username']= $usr;
-             $rcp = new recep();
-             $rcp->redirectLogin($usr);
+               $rcp =recep::getInstance();
+               $rcp->redirectLogin($usr);
+               #$rcp = new recep();
+              #$rcp->redirectLogin($usr);
               
            }
       
