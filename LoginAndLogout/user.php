@@ -1,6 +1,8 @@
 <?php
 session_start();
+
 require_once('classes/userClass.php');
+
 if(!$_SESSION["username"])
 {
      header("Location:home.php");
@@ -53,11 +55,11 @@ if(!$_SESSION["username"])
         
       <div id="mySidenav" class="sidenav">
          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-         <a href="../com/com.php">COMPLAIN</a>
+         <a href="complain.php">COMPLAIN</a>
          <a href="../booking/booking.php">BOOK A ROOM</a>
-         <a href="../service/register.php">SERVICES</a>
-         <a href="../room/activityht.php">CHOOSE ACTIVITY</a>
-         <a href="../room/showActivity.php">SEE ACTIVITY</a>
+         <a href="services.php">SERVICES</a>
+         <a href="../Room/activityht.php">CHOOSE ACTIVITY</a>
+         <a href="../Room/showActivity.php">SEE ACTIVITY</a>
          <a href="RateRoom.php">RATE YOUR ROOM</a>
          <button class="logoutBtn" name="logoutBtn" onClick='location.href="?LOGOUT"'>LOGOUT</button>
       </div>

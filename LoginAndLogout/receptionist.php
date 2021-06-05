@@ -58,10 +58,10 @@ if(!$_SESSION["username"]=='recep')
       
       <div id="mySidenav" class="sidenav">
          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-         <a href="../room/billht.php">BILL</a>
-         <a href="../room/showActivity.php">USER ACTIVITY</a>
+         <a href="../Room/billht.php">BILL</a>
+         <a href="../Room/showActivity.php">USER ACTIVITY</a>
          <a href="../booking/booking.php">BOOKING</a>
-         <a href="ComplainsDisplay.php">SEE COMPLAINS</a>
+         <a href="show_services.php">SERVICES COMPLAINS</a>
          <button class="logoutBtn" name="logoutBtn" onClick='location.href="?LOGOUT"'>LOGOUT</button>
       </div>
 

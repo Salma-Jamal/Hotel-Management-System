@@ -1,4 +1,14 @@
 <?php
+require_once 'AdminClass.php';
+require_once 'userClass.php';
+require_once 'recepClass.php';
+
+// Factory Pattern
+interface Redirect
+{
+    public function redirectLogin($usr);
+}
+
 
 class person1
 {
@@ -61,23 +71,30 @@ public function Login($usr,$pass) {
       {
         if($usr == 'admin')
           {
-             header("location: admin.php");
-             $_SESSION['message'] = "You are now logged in";
-             $_SESSION['username']= $usr;
+             #header("location: admin.php");
+             #$_SESSION['message'] = "You are now logged in";
+             #$_SESSION['username']= $usr;
+             $adm = new admin();
+             $adm->redirectLogin($usr);
           }
                       
         elseif($usr == 'recep')
            {
-              header("location: receptionist.php");
-              $_SESSION['message'] = "You are now logged in";
-              $_SESSION['username']= $usr;
+              //header("location: receptionist.php");
+              //$_SESSION['message'] = "You are now logged in";
+              //$_SESSION['username']= $usr;
+             $rcp = new recep();
+             $rcp->redirectLogin($usr);
+              
            }
       
         else
           {
-              header("location: user.php");
-              $_SESSION['message'] = "You are now logged in";
-              $_SESSION['username']= $usr; 
+              //header("location: user.php");
+              //$_SESSION['message'] = "You are now logged in";
+              //$_SESSION['username']= $usr;
+             $ur = new user();
+             $ur->redirectLogin($usr);
           }
       }
         
@@ -87,8 +104,6 @@ public function Login($usr,$pass) {
       }
  }
   
-  
-    
   
   
       public function Logout()

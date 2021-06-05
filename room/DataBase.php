@@ -101,6 +101,58 @@ class DataBase
                       
     }
     
+   public function showBooking()
+    {
+         
+          $sql= "SELECT * FROM booking";
+          $result = $this->conn->query($sql);
+          return  $result;
+         
+                      
+    }
+    
+       public function showComplains()
+    {
+         
+           $sql= "SELECT * FROM complains";
+          $result = $this->conn->query($sql);
+          return  $result;
+         
+                      
+    }
+    
+    public function showServices()
+    {
+      $sql= "SELECT * FROM service";
+      $result = $this->conn->query($sql);
+      return  $result;
+    }
+    
+    public function reg($usr,$pass,$email,$phone){
+      $sql = "INSERT INTO `persons` (`id`, `username`, `password`, `email`, `phone`) VALUES ('', '$usr', '$pass', '$email', '$phone')";
+      $result = $this->conn->query($sql);
+      return $result;
+    }
+    
+     public function rate($roomNo,$floor,$roomType,$rate){
+      $sql = "INSERT INTO `ratings` (`roomNo`, `floor`, `roomType`, `rate`) VALUES ('$roomNo', '$floor', '$roomType', '$rate')";
+      $result = $this->conn->query($sql);
+      return $result;
+    }
+    
+    
+   public function servi($srname , $comment){
+      $sql = "INSERT INTO `service`(`username`, `comment`) VALUES ('$srname','$comment')";
+      $result = $this->conn->query($sql);
+      return $result;
+    }
+    
+   public function complain($c_name ,$email, $comment){
+      $sql = "INSERT INTO `comp` (`username`, `email`, `comment`) VALUES ('$c_name','$email','$comment')";
+      $result = $this->conn->query($sql);
+      return $result;
+    }
+    
     
     
     

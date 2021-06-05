@@ -54,11 +54,12 @@ if(!$_SESSION["username"]=='admin')
        
      <div id="mySidenav" class="sidenav">
        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-       <a href="../room/roomdisegn.php">ADD ROOM</a>
-       <a href="../room/updateroom.php">UPDATE ROOM</a>
-       <a href="../room/DeleteRoom.php">DELETE ROOM</a>
+       <a href="../Room/roomdisegn.php">ADD ROOM</a>
+       <a href="../Room/updateroom.php">UPDATE ROOM</a>
+       <a href="../Room/DeleteRoom.php">DELETE ROOM</a>
        <a href="ComplainsDisplay.php">SEE COMPLAINS</a>
        <a href="bookingDisplay.php">SEE BOOKINGS</a>
+       <a href="show_services.php">SERVICES COMPLAINS</a>
        <button class="logoutBtn" name="logoutBtn" onClick='location.href="?LOGOUT"'>LOGOUT</button>
      </div>
   

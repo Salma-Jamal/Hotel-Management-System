@@ -1,6 +1,9 @@
 <?php
 session_start();
-require_once('classes/AdminClass.php');
+#require_once('classes/AdminClass.php');
+
+require_once('adapter.php');
+
 if(!$_SESSION["username"]=='admin')
 {
      header("Location:home.php"); 
@@ -28,9 +31,9 @@ if(!$_SESSION["username"]=='admin')
      
            
 <?php
-
-   $User = new admin();
-   $User->showComplains();   
+   
+   $shapeMaker = new show_all_wrap();
+   $shapeMaker->show('comp');
 
  ?>   
     
