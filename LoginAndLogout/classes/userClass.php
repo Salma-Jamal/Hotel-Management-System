@@ -22,7 +22,7 @@ class user extends person1 implements Redirect
       $result = $Base->reg($usr,$pass,$email,$phone);
       if($result == 1){
          $_SESSION['message'] = "Registered Successfully!";
-         header("location: home.php");// redirect to home page        
+         header("location: home.php");       
      
       }
 

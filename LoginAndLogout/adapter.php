@@ -5,6 +5,7 @@ include_once('classes/AdminClass.php');
 
 
 //Adapter pattern
+
  interface show_ser_book
  {
   

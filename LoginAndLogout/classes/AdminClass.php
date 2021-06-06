@@ -22,9 +22,12 @@ class admin extends person1 implements Redirect,show_all
  
     public function redirectLogin($usr)
     {
-      header("location: admin.php");
-      $_SESSION['message'] = "You are now logged in";
-      $_SESSION['username']= $usr;
+      if ($usr == 'admin')
+      {
+            header("location: admin.php");
+            $_SESSION['message'] = "You are now logged in";
+            $_SESSION['username']= $usr;
+      }
     }
     
 

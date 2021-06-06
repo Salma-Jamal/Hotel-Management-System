@@ -59,7 +59,6 @@ if(!$_SESSION["username"])
          <a href="../booking/booking.php">BOOK A ROOM</a>
          <a href="services.php">SERVICES</a>
          <a href="../Room/activityht.php">CHOOSE ACTIVITY</a>
-         <a href="../Room/showActivity.php">SEE ACTIVITY</a>
          <a href="RateRoom.php">RATE YOUR ROOM</a>
          <button class="logoutBtn" name="logoutBtn" onClick='location.href="?LOGOUT"'>LOGOUT</button>
       </div>

@@ -26,6 +26,12 @@ class DataBase
         return self::$single;
     }
 
+    public function logIn($usr,$pass)
+    {
+      $sql= "SELECT * FROM persons WHERE username='$usr' AND password='$pass' ";
+      $result = $this->conn->query($sql);
+      return  $result;
+    }
     
     public function Delete($tableName,$id)
     {
@@ -114,7 +120,7 @@ class DataBase
        public function showComplains()
     {
          
-           $sql= "SELECT * FROM complains";
+           $sql= "SELECT * FROM comp";
           $result = $this->conn->query($sql);
           return  $result;
          

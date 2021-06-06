@@ -2,6 +2,7 @@
 require_once 'AdminClass.php';
 require_once 'userClass.php';
 require_once 'recepClass.php';
+include_once('../Room/DataBase.php');
 
 // Factory Pattern
 interface Redirect
@@ -62,41 +63,26 @@ class person1
  
  
 public function Login($usr,$pass) {
-    
-     $db= mysqli_connect("localhost" , "root" , "", "hotel");
-     $sql= "SELECT * FROM persons WHERE username='$usr' AND password='$pass' ";
-     $result= mysqli_query($db,$sql);
+     	$Base=DataBase::getInstance();
+      $result = $Base->logIn($usr,$pass);
      
      if(mysqli_num_rows($result) == 1)
       {
         if($usr == 'admin')
           {
-             #header("location: admin.php");
-             #$_SESSION['message'] = "You are now logged in";
-             #$_SESSION['username']= $usr;
                $adm =admin::getInstance();
                $adm->redirectLogin($usr);
-             #$adm = new admin();
-             ##$adm->redirectLogin($usr);
           }
                       
         elseif($usr == 'recep')
            {
-              //header("location: receptionist.php");
-              //$_SESSION['message'] = "You are now logged in";
-              //$_SESSION['username']= $usr;
                $rcp =recep::getInstance();
-               $rcp->redirectLogin($usr);
-               #$rcp = new recep();
-              #$rcp->redirectLogin($usr);
-              
+               $rcp->redirectLogin($usr);  
            }
       
         else
           {
-              //header("location: user.php");
-              //$_SESSION['message'] = "You are now logged in";
-              //$_SESSION['username']= $usr;
+
              $ur = new user();
              $ur->redirectLogin($usr);
           }

@@ -37,10 +37,7 @@ require_once('adapter.php');
 
    $shapeMaker = new show_all_wrap();
    $shapeMaker->show('book');
-   #$User = new admin();
-   #$User->showBookings();
-   //$show_al = new show_all();
-   //$show_al->show('comp')
+
 
 
  ?>   

@@ -13,7 +13,8 @@ $departure=$_POST['departure'];
 $room=$_POST['typeroom'];     
    $sql = "INSERT INTO`booking`( `name`, `email`, `phone`, `country`, `arrvial`, `departure`, `typeroom`) VALUES ('$name','$email','$phone','$country','$arrival','$departure','$room')";
  $conn->exec($sql);
-    echo "Records inserted successfully.";   
+    #echo "Records inserted successfully.";
+    header("location: booking.php");
 }
     
 }

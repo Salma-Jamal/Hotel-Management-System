@@ -50,7 +50,7 @@ session_start();
        
        <p class="midTitle"><span>Five Star Hotel</span></p>
        <h2 class="mid2">Make Your Vacation Comfortable</h2>
-       <a href="../booking/booking.php" class="btnbook">Book Now</a>
+       <a href="register.php" class="btnbook">Book Now</a>
        
        <footer class="site-footer">
        <h1 class="h1footer">FIVE STAR HOTEL</h1>

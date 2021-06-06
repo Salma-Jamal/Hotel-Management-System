@@ -60,8 +60,9 @@ if(!$_SESSION["username"]=='recep')
          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
          <a href="../Room/billht.php">BILL</a>
          <a href="../Room/showActivity.php">USER ACTIVITY</a>
-         <a href="../booking/booking.php">BOOKING</a>
-         <a href="show_services.php">SERVICES COMPLAINS</a>
+         <a href="../booking/booking.php">BOOK A ROOM</a>
+         <a href="show_services.php">SHOW SERVICES COMPLAINS</a>
+         <a href="bookingDisplay.php">SHOW BOOKINGS</a>
          <button class="logoutBtn" name="logoutBtn" onClick='location.href="?LOGOUT"'>LOGOUT</button>
       </div>
 
